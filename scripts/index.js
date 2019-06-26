@@ -40,10 +40,11 @@ function Postion() {
 };
 
 function arrow(){
-	$('.btn-nextArrow').animate({"top":"+=15"}, 800);
-	$('.btn-nextArrow').animate({"top":"-=15"}, 800);
+	//$('.btn-nextArrow').animate({"top":"+=15"}, 800);
+	//$('.btn-nextArrow').animate({"top":"-=15"}, 800);
 	setTimeout(arrow,80);
 };
+
 
 // 滑到指定位置 -------------------------
 $(function btn(){
