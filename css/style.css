@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url('reset.min.1.2.css');
+@import url('normalize.css');
 
 *, *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
 *::selection { color: #FFF; background: #ff4949; }
