@@ -39,7 +39,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .experience-depict { color: #787878; }
 /*-- SKILL --*/
 .skill-block { width: 100%; padding: 0.5em 0 3em 0; }
-.skill-block>ul { width: 80%; display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto; }
+.skill-block>ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto; }
 .skill-block>ul>li { font-size: 3em; flex: none; margin: 0 2%; }
 
 
@@ -49,7 +49,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .btn-more a:hover { background: #ff4949; color: #FFF; transition-duration: 0.5s; }
 .btn-top a, .btn-back a { width: 110px; display: none; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1em 'Comfortaa', cursive; margin: 0 auto; padding: 0.5em; }
 .btn-top a:hover, .btn-back a:hover { display: none; background: #ff4949; color: #FFF; transition-duration: 0.5s; }
-.banner-more { display: none; }
+.active { display: none; }
 /*-- NAV --*/
 #sort-block { padding: 0 0 0.5em 0; }
 /*-- BANNER --*/
@@ -85,6 +85,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 /*----- CONTACT -----*/
 .mail { width: 30%; margin: 0 auto; }
 .mail a { color: #ff4949; }
+.mail a:hover { color: #c10000; }
 
 
 /*----- FOOTER -----*/

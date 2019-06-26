@@ -30,6 +30,10 @@
   /*margin-left: 20px;*/
 }
 
+[class^="flaticon-"]:hover, [class*=" flaticon-"]:hover {
+  color: #c10000;
+}
+
 .flaticon-photoshop:before { content: "\f100"; }
 .flaticon-illustrator:before { content: "\f101"; }
 .flaticon-html:before { content: "\f102"; }
