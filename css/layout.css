@@ -4,7 +4,7 @@
 *, *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
 *::selection { color: #FFF; background: #ff4949; }
 
-body { background: #FFF; font-family: /*'Quicksand',*/ 'Noto Sans TC', sans-serif; font-size: 16px; }
+body { background: #FFF; font-family: /*'Quicksand',*/ 'Noto Sans TC', sans-serif; font: 1em/1.5 'Microsoft JhengHei'; /*font-size: 16px;*/ }
 img { border: 0; }
 a { display: block; text-decoration: none; }
 
