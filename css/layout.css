@@ -49,11 +49,16 @@ h3 { color: #a0a0a0; font: 1rem 'Comfortaa', cursive; padding-top: 0.2em; }
 
 
 /*----- PORTFOLIO -----*/
-.btn-top { display: none; }
-.btn-back { display: none; }
+/*-- BTN --*/
+.btn-more a { width: 110px; background: #DEDEDE; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1rem 'Comfortaa', cursive; margin: 0 auto; margin-top: 0.5em; padding: 0.5em; }
+.btn-more a:hover { background: #ff4949; color: #FFF; transition-duration: 0.5s; }
+.btn-top a, .btn-back a { width: 110px; display: none; background: #DEDEDE; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1rem 'Comfortaa', cursive; margin: 0 auto; padding: 0.5em; }
+.btn-top a:hover, .btn-back a:hover { display: none; background: #ff4949; color: #FFF; transition-duration: 0.5s; }
 .banner-more { display: none; }
+/*-- NAV --*/
+#sort-block {  }
 /*-- BANNER --*/
-.banner-block { width: 100%; margin: 1em 0; }
+.banner-block { width: 100%; margin: 0 0 1em 0; }
 .banner-block ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; }
 .banner-block ul>li { /*width: 30%;*/ flex: none; padding: 0.8em; }
 
@@ -80,5 +85,11 @@ h3 { color: #a0a0a0; font: 1rem 'Comfortaa', cursive; padding-top: 0.2em; }
 }
 
 
+
+
+
 @media screen and (max-width:1000px) {
+    .bullets-container { display: none; }  /* 右側nav */
+    .header { height: 100vmin; }
+    .header-bg { /*background-size: 100%;* }
 }

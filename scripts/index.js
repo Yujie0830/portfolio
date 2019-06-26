@@ -26,16 +26,16 @@ $(window).resize(function () {
 function Postion() {
 	$('.btn-more a').click(function(){
 		$('.banner-more').css({'display':'block'});		
-		$('.btn-top').css({'display':'block'});
-		$('.btn-back').css({'display':'block'});
-		$('.btn-more').css({'display':'none'});
+		$('.btn-top a').css({'display':'block'});
+		$('.btn-back a').css({'display':'block'});
+		$('.btn-more a').css({'display':'none'});
 	});
 
 	$('.btn-back a').click(function(){
 		$('.banner-more').css({'display':'none'});
-		$('.btn-top').css({'display':'none'});
-		$('.btn-back').css({'display':'none'});
-		$('.btn-more').css({'display':'block'});
+		$('.btn-top a').css({'display':'none'});
+		$('.btn-back a').css({'display':'none'});
+		$('.btn-more a').css({'display':'block'});
 	});
 };
 
