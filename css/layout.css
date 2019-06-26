@@ -1,0 +1,84 @@
+/* CSS Document */
+@import url('reset.min.1.2.css');
+
+*, *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
+*::selection { color: #FFF; background: #ff4949; }
+
+body { background: #FFF; font-family: /*'Quicksand',*/ 'Noto Sans TC', sans-serif; font-size: 14px; }
+img { border: 0; }
+a { display: block; text-decoration: none; }
+
+
+.header { height: 100vh; display: flex; position: relative; }
+.header-bg { width: 100%; height: 100%; background: url(../images/BGindex.jpg) no-repeat 50% 0; /*background-size: 100%;*/ }
+.btn-nextArrow { width: 31px; height: 27px; background: url(../images/nextArrow.png); background-size: 100%; position: absolute; left: 50%; bottom: 3em; margin-left: -20px; z-index: 99; }
+
+/*----- ABOUT -----*/
+.container-block { width: 100%; max-width: 1000px; letter-spacing: 0.1em; margin: 0 auto; padding: 2.5em 0; text-align: center; }
+.gray { background: #DEDEDE; }
+h1 { color: #c10000; font: 3rem 'Comfortaa', cursive; }
+h2 { color: #ff4949; font: bold 2rem 'Noto Serif TC', serif; }
+h3 { color: #a0a0a0; font: 1rem 'Comfortaa', cursive; padding-top: 0.2em; }
+.title { padding: 2em 0 1em 0; }
+.sub-header { width: 205px; height: 25px; background: url(../images/baseline.png) no-repeat; margin: 0 auto; }
+/*-- EXPERIENCE --*/
+.experience-block { width: 100%; margin: 2em 0; }
+.experience-block>ul { display: flex; justify-content: center; align-items: stretch; }
+.experience-block>ul>li { width:46.5%; background: #EEE; box-shadow: inset 0 0 0 10px #EEE, inset 0 0 0 12px #FFF; flex: none; font-size: 1.1em; margin: 0 1%; padding: 4%; position: relative; text-align:justify; text-justify: distribute; }
+.logoPU { width: 90px; height: 90px; perspective: 700; position: absolute; left: 50%; top: -34px; margin-left: -45px; }
+.logoUJ { width: 90px; height: 90px; perspective: 700; position: absolute; left: 50%; top: -34px; margin-left: -45px; }
+.logoPU-hover { width:90px; height: 90px; background: url(../images/logoPU.png); transition: all 0.6s ease; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; position: relative; }
+.logoUJ-hover { width:90px; height: 90px; background: url(../images/logoUJ.png); transition: all 0.6s ease; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; position: relative; }
+.logoPU-hover:hover, .logoUJ-hover:hover { width:90px; height: 90px; -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); transform: rotateY(180deg); }
+.front, .back { width:90px; height: 90px; position: absolute; top: 0; left: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.back { -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); transform: rotateY(180deg); }
+.experience-time { padding-top: 2em; text-align: center; }
+.experience-title { font-size: 1.2em; padding-bottom: 1em; text-align: center; }
+.experience-depict { color: #787878; }
+/*-- SKILL --*/
+.skill-block { width: 100%; margin: 0.5em 0 2em 0; }
+.skill-block>ul { width: 30%; display: flex; justify-content: space-around; margin: 0 auto; }
+.skill-block>ul>li { width: 62px; height: 62px; flex: none; }
+.skill-PS { background: url(../images/skill-PS.png); margin: 0 0.5em; }
+.skill-AI { background: url(../images/skill-AI.png); margin: 0 0.5em; }
+.skill-DW { background: url(../images/skill-DW.png); margin: 0 0.5em; }
+.skill-HTML { background: url(../images/skill-HTML.png); }
+.skill-CSS { background: url(../images/skill-CSS.png); }
+.skill-JS { background: url(../images/skill-JS.png); }
+.skill-JQ { background: url(../images/skill-JQ.png); }
+
+
+/*----- PORTFOLIO -----*/
+.btn-top { display: none; }
+.btn-back { display: none; }
+.banner-more { display: none; }
+/*-- BANNER --*/
+.banner-block { width: 100%; margin: 1em 0; }
+.banner-block ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; }
+.banner-block ul>li { /*width: 30%;*/ flex: none; padding: 0.8em; }
+
+.gallery:after {
+	content: '';
+	/*display: block;*/
+	height: 2px;
+	margin: 0.5em 0 1.4em;
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(77,77,77,1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery img {
+	height: 100%;
+	-webkit-filter: grayscale(50%);; /* Safari */
+	filter: grayscale(50%);;
+}
+
+.gallery a {
+	width: 100%;
+	height: 220px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+
+@media screen and (max-width:1000px) {
+}
