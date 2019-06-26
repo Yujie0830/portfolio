@@ -16,9 +16,9 @@ a { display: block; text-decoration: none; }
 /*----- ABOUT -----*/
 .container-block { width: 100%; max-width: 1000px; letter-spacing: 0.1em; margin: 0 auto; padding: 2.5em 0; text-align: center; }
 .gray { background: #DEDEDE; }
-h1 { color: #c10000; font: 3rem 'Comfortaa', cursive; }
-h2 { color: #ff4949; font: bold 2rem 'Noto Serif TC', serif; }
-h3 { color: #a0a0a0; font: 1rem 'Comfortaa', cursive; padding-top: 0.2em; }
+h1 { color: #c10000; font: 3em 'Comfortaa', cursive; }
+h2 { color: #ff4949; font: bold 2em 'Noto Serif TC', serif; }
+h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; padding-top: 0.2em; }
 .title { padding: 2em 0 1em 0; }
 .sub-header { width: 205px; height: 25px; background: url(../images/baseline.png) no-repeat; margin: 0 auto; }
 /*-- EXPERIENCE --*/
@@ -50,9 +50,9 @@ h3 { color: #a0a0a0; font: 1rem 'Comfortaa', cursive; padding-top: 0.2em; }
 
 /*----- PORTFOLIO -----*/
 /*-- BTN --*/
-.btn-more a { width: 110px; background: #DEDEDE; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1rem 'Comfortaa', cursive; margin: 0 auto; margin-top: 0.5em; padding: 0.5em; }
+.btn-more a { width: 110px; background: #DEDEDE; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1em 'Comfortaa', cursive; margin: 0 auto; margin-top: 0.5em; padding: 0.5em; }
 .btn-more a:hover { background: #ff4949; color: #FFF; transition-duration: 0.5s; }
-.btn-top a, .btn-back a { width: 110px; display: none; background: #DEDEDE; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1rem 'Comfortaa', cursive; margin: 0 auto; padding: 0.5em; }
+.btn-top a, .btn-back a { width: 110px; display: none; background: #DEDEDE; border: 1px solid #ff4949; border-radius: 50px; color: #ff4949; font: 1.1em 'Comfortaa', cursive; margin: 0 auto; padding: 0.5em; }
 .btn-top a:hover, .btn-back a:hover { display: none; background: #ff4949; color: #FFF; transition-duration: 0.5s; }
 .banner-more { display: none; }
 /*-- NAV --*/
@@ -88,7 +88,7 @@ h3 { color: #a0a0a0; font: 1rem 'Comfortaa', cursive; padding-top: 0.2em; }
 
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     .header { height: 100vmin; }
-    .header-bg { /*background-size: 100%;* }
+    .btn-nextArrow { display: none; }
 }
