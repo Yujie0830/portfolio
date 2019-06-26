@@ -38,9 +38,11 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .experience-title { font-size: 1.2em; padding-bottom: 1em; text-align: center; }
 .experience-depict { color: #787878; }
 /*-- SKILL --*/
-.skill-block { width: 100%; padding: 1.5em 0 3em 0; }
-.skill-block>ul { width: 60%; display: flex; justify-content: space-around; margin: 0 auto; }
-.skill-block>ul>li { width: 62px; height: 62px; flex: none; }
+.computer { display: block; }
+.phone { display: none; }
+.skill-block { width: 100%; padding: 0.5em 0 3em 0; }
+.computer { width: 60%; display: flex; justify-content: space-around; margin: 0 auto; }
+.computer li { width: 62px; height: 62px; flex: none; }
 .skill-PS { background: url(../images/skill-PS.png); margin: 0 0.5em; }
 .skill-AI { background: url(../images/skill-AI.png); margin: 0 0.5em; }
 .skill-DW { background: url(../images/skill-DW.png); margin: 0 0.5em; }
@@ -104,14 +106,15 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 	.experience-block>ul { flex-wrap: wrap; }
 	.experience-block>ul>li { width: 90%; transition-duration: 0.5s; }
 	.experience-block>ul>li:first-child { margin: 0 0 3em 0; }
-	.skill-block>ul { width: 90%; /*flex-wrap: wrap;*/ }/*
-	.skill-block>ul>li:nth-child(n<4) { flex-basis: 30%; }
-	.skill-block>ul>li:nth-child(n>3) { flex-basis: 70%; }*//*
-	.skill-block>ul>li { width: 30%; height: auto; background-size: 100%; }
-	.skill-block>ul>li img { width: 100%; height: 100%; }*/
-	.skill-block>ul { width: 90%; }
-	.skill-block>ul>li { width: 50px; height: 50px; background-size: 100%; transition-duration: 0.5s; }
+	.computer { display: none; }
+	.phone-1, .phone-2 { display: block; }
+	.phone-1 { width: 60%; display: flex; justify-content: space-around; margin: 0 auto; }
+	.phone-2 { width: 80%; display: flex; justify-content: space-around; margin: 0 auto; padding: 1em 0 0 0; }
+	.phone-1 li,.phone-2 li { width: 62px; height: 62px; flex: none; }
+	.skill-block { padding: 0 0 3em 0; }
+	/*.skill-block>ul>li { width: 50px; height: 50px; background-size: 100%; transition-duration: 0.5s; }*/
 	.skill-PS, .skill-AI, .skill-DW { margin: 0 0.2em; }
+	.skill-DW { padding: 0; }
 	.banner-block ul>li { width: 46.5%; padding: 1% 1.5%; transition-duration: 0.5s; }
 	.banner-block .banner-btn-block li { width: 35%; }
 }
