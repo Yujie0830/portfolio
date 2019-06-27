@@ -112,7 +112,7 @@
 	<!-- CONTACT -->
 	<div id="page-contact" class="scrollable-section" data-section-title="CONTACT">
 		<div class="container-block">
-			<h1>CONTACT2</h1>
+			<h1>CONTACT</h1>
 			<p>歡迎寄Email與我聯絡</p>
 			<p class="mail"><a href="mailto:yujie0830@gmail.com"><i class="flaticon-mail"></i> yujie0830@gmail.com</a></p>
 		</div>
@@ -126,14 +126,23 @@
 </body>
 <script type="text/javascript">
 	window.onload = function() {
-		baguetteBox.run('.gallery');
+	    baguetteBox.run('.baguetteBoxOne');
+	    baguetteBox.run('.baguetteBoxTwo');
 	    baguetteBox.run('.baguetteBoxThree', {
 	        animation: 'fadeIn',
 	        noScrollbars: true
 	    });
+	    baguetteBox.run('.baguetteBoxFour', {
+	        buttons: false
+	    });
+	    baguetteBox.run('.baguetteBoxFive', {
+	        captions: function(element) {
+	            return element.getElementsByTagName('img')[0].alt;
+	        }
+	    });
 
 	    if (typeof oldIE === 'undefined' && Object.keys) {
-	       hljs.initHighlighting();
+	        hljs.initHighlighting();
 	    }
 	};
   	$(document).ready(function () { 
