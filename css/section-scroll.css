@@ -3,7 +3,7 @@
     position: fixed;
     right: 0;
     height: 100%;
-    z-index: 1049;
+    z-index: 9999;
     font-weight: normal;
 }
 

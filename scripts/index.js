@@ -42,8 +42,8 @@ function Postion() {
 };
 
 function arrow(){
-	//$('.btn-nextArrow').animate({"top":"+=15"}, 800);
-	//$('.btn-nextArrow').animate({"top":"-=15"}, 800);
+	//$('.btn-nextArrow').animate({"top":"+=20"}, 800);
+	//$('.btn-nextArrow').animate({"top":"-=20"}, 800);
 	setTimeout(arrow,80);
 };
 

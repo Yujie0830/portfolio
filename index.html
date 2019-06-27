@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="scrollable-section header" data-section-title="首頁">
-		<div class="btn-nextArrow"></div>
+		<!--<div class="btn-nextArrow"></div>-->
 		<div class="header-bg"></div>
 	</div>
 	<!-- ABOUT -->
@@ -131,9 +131,9 @@
 	        noScrollbars: true
 	    });
 
-	    //if (typeof oldIE === 'undefined' && Object.keys) {
-	    //   hljs.initHighlighting();
-	    //}
+	    if (typeof oldIE === 'undefined' && Object.keys) {
+	       hljs.initHighlighting();
+	    }
 	};
   	$(document).ready(function () { 
       	$('body').sectionScroll(); 
