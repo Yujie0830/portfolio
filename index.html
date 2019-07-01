@@ -80,8 +80,8 @@
 			<h1>PORTFOLIO</h1>
 			<div id="sort-block" class="title"><h2>BANNER / WEB</h2></div>
 			<div class="banner-block">
-				<div class="baguetteBoxThree gallery">
-					<ul>
+				<div>
+					<ul class="baguetteBoxThree gallery">
 						<li><a href="images/banner/thumbs/001.jpg"><img src="images/banner/001.jpg" alt=""></a></li>
 						<li><a href="images/banner/thumbs/002.jpg"><img src="images/banner/002.jpg" alt=""></a></li>
 						<li><a href="images/banner/thumbs/003.jpg"><img src="images/banner/003.jpg" alt=""></a></li>
@@ -126,19 +126,9 @@
 </body>
 <script type="text/javascript">
 	window.onload = function() {
-	    baguetteBox.run('.baguetteBoxOne');
-	    baguetteBox.run('.baguetteBoxTwo');
 	    baguetteBox.run('.baguetteBoxThree', {
 	        animation: 'fadeIn',
 	        noScrollbars: true
-	    });
-	    baguetteBox.run('.baguetteBoxFour', {
-	        buttons: false
-	    });
-	    baguetteBox.run('.baguetteBoxFive', {
-	        captions: function(element) {
-	            return element.getElementsByTagName('img')[0].alt;
-	        }
 	    });
 
 	    if (typeof oldIE === 'undefined' && Object.keys) {
