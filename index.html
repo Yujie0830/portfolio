@@ -18,16 +18,14 @@
     <script type="text/javascript" src="scripts/jquery.section-scroll.js"></script>
     <script type="text/javascript" src="scripts/baguetteBox.js"></script>
     <script type="text/javascript" src="scripts/loading-overlay.js"></script>
+    <style type="text/css">
+		#loading{z-index:99;padding:5px 0 5px 29px;
+		background:url(images/loading_red.gif) no-repeat 10px top;left:0;top:0;width:42px;
+		position:fixed; height:32px}
+</style>
 </head>
 <body>
-	<div id="target" class="loading">
-  		<div class="loading-overlay">
-    		<p class="loading-spinner">
-      			<span class="loading-icon"></span>
-      			<span class="loading-text">loading</span>
-    		</p>
-  		</div>
-	</div>
+	<div id="loading"></div>
 	<div class="scrollable-section header" data-section-title="首頁">
 		<!--<div class="btn-nextArrow"></div>-->
 		<div class="header-bg"></div>
@@ -135,13 +133,9 @@
 	</div>
 </body>
 <script type="text/javascript">
-	jQuery(function($) {
-    	// Calling the plugin
-    	// (prepends a div.loading to the target element)
-    	$('#target').loadingOverlay();
- 
-    	// Removing the loading overlay
-    	$('#target').loadingOverlay('remove');
+	//页面加载完成之后隐藏loading
+   $(window).load(function(){
+	    $("#loading").hide();
 	});
 
 	window.onload = function() {
