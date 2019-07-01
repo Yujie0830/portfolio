@@ -78,7 +78,7 @@
 	<div id="page-portfolio" class="scrollable-section gray animated" data-section-title="PORTFOLIO">
 		<div class="container-block">
 			<h1>PORTFOLIO</h1>
-			<div id="sort-block" class="title"><h2>BANNER / WEB 2</h2></div>
+			<div id="sort-block" class="title"><h2>BANNER / WEB</h2></div>
 			<div class="banner-block">
 				<div>
 					<ul class="baguetteBoxThree gallery">
@@ -126,6 +126,9 @@
 </body>
 <script type="text/javascript">
 	window.onload = function() {
+		baguetteBox.run('.gallery', {
+    		preload: 9;
+		});
 	    baguetteBox.run('.baguetteBoxThree', {
 	        animation: 'fadeIn',
 	        noScrollbars: true
