@@ -53,12 +53,12 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .btn-top a:hover, .btn-back a:hover { display: none; background: #ff4949; color: #FFF; transition-duration: 0.5s; }
 .active { display: none; }
 /*-- NAV --*/
-#sort-block { padding: 0 0 0.5em 0; }
+/*#sort-block { padding: 0 0 0.5em 0; }*/
 /*-- BANNER --*/
-.banner-block { width: 100%; margin: 0 0 1em 0; }
-.banner-block ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding-bottom: 1.5em; }
-.banner-block ul>li { width: 33%; flex: none; padding: 0.5% 1.5%; }
-.banner-block .banner-btn-block li { width: 18%; flex: none; padding: 0.5% 1.5%; }
+.banner-block, .web-block { width: 100%; margin: 0 0 1em 0; }
+.banner-block ul, .web-block ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding-bottom: 1.5em; }
+.banner-block ul>li, .web-block ul>li { width: 33%; flex: none; padding: 0.5% 1.5%; }
+.banner-block .banner-btn-block li, .web-block .banner-btn-block li { width: 18%; flex: none; padding: 0.5% 1.5%; }
 
 .gallery:after {
 	content: '';

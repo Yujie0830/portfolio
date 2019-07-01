@@ -29,18 +29,33 @@ $(window).resize(function () {
 
 
 function Postion() {
-	$('.btn-more a').click(function(){
-		$('.active').css({'display':'block'});		
-		$('.btn-top a').css({'display':'block'});
-		$('.btn-back a').css({'display':'block'});
-		$('.btn-more a').css({'display':'none'});
+	$('.banner-block .btn-more a').click(function(){
+		//$('.banner-block .active').fadeIn();
+		$('.banner-block .active').css({'display':'block'});
+		$('.banner-block .btn-top a').css({'display':'block'});
+		$('.banner-block .btn-back a').css({'display':'block'});
+		$('.banner-block .btn-more a').css({'display':'none'});
 	});
 
-	$('.btn-back a').click(function(){
-		$('.active').css({'display':'none'});
-		$('.btn-top a').css({'display':'none'});
-		$('.btn-back a').css({'display':'none'});
-		$('.btn-more a').css({'display':'block'});
+	$('.banner-block .btn-back a').click(function(){
+		$('.banner-block .active').css({'display':'none'});
+		$('.banner-block .btn-top a').css({'display':'none'});
+		$('.banner-block .btn-back a').css({'display':'none'});
+		$('.banner-block .btn-more a').css({'display':'block'});
+	});
+
+	$('.web-block .btn-more a').click(function(){
+		$('.web-block .active').css({'display':'block'});		
+		$('.web-block .btn-top a').css({'display':'block'});
+		$('.web-block .btn-back a').css({'display':'block'});
+		$('.web-block .btn-more a').css({'display':'none'});
+	});
+
+	$('.web-block .btn-back a').click(function(){
+		$('.web-block .active').css({'display':'none'});
+		$('.web-block .btn-top a').css({'display':'none'});
+		$('.web-block .btn-back a').css({'display':'none'});
+		$('.web-block .btn-more a').css({'display':'block'});
 	});
 };
 
@@ -53,11 +68,11 @@ function arrow(){
 function banner(){
 	var $ofweidht = window.innerWidth;
 
-    if( $ofweidht < 750) {
-		$('.banner-block ul>li:nth-of-type(9)').addClass("active");	
-	} else {
-		$('.banner-block ul>li:nth-of-type(9)').removeClass("active");		
-	}
+    //if( $ofweidht < 750) {
+	//	$('.banner-block ul>li:nth-of-type(9)').addClass("active");	
+	//} else {
+	//	$('.banner-block ul>li:nth-of-type(9)').removeClass("active");		
+	//}
 };
 
 
@@ -71,24 +86,45 @@ $(function btn(){
 		}, 400, 'linear'); 
 		return false;
 	});
-	$('.btn-more a').click(function(){
+	$('.banner-block .btn-more a').click(function(){
 		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$MENU_info.animate({
 			scrollTop: $('#banner-more').offset().top
 		}, 400, 'linear'); 
 		return false;
 	});
-	$('.btn-top a').click(function(){
+	$('.web-block .btn-more a').click(function(){
 		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$MENU_info.animate({
-			scrollTop: $('#sort-block').offset().top
+			scrollTop: $('#web-more').offset().top
 		}, 400, 'linear'); 
 		return false;
 	});
-	$('.btn-back a').click(function(){
+	$('.banner-block .btn-top a').click(function(){
 		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$MENU_info.animate({
-			scrollTop: $('#sort-block').offset().top
+			scrollTop: $('#banner').offset().top
+		}, 400, 'linear'); 
+		return false;
+	});
+	$('.web-block .btn-top a').click(function(){
+		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$MENU_info.animate({
+			scrollTop: $('#web').offset().top
+		}, 400, 'linear'); 
+		return false;
+	});
+	$('.banner-block .btn-back a').click(function(){
+		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$MENU_info.animate({
+			scrollTop: $('#banner').offset().top
+		}, 800, 'linear'); 
+		return false;
+	});
+	$('.web-block .btn-back a').click(function(){
+		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$MENU_info.animate({
+			scrollTop: $('#web').offset().top
 		}, 800, 'linear'); 
 		return false;
 	});
