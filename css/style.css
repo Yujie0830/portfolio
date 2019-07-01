@@ -13,20 +13,21 @@ ul,li { list-style: none; margin: 0; padding: 0; }
 
 #page-loading { width: 100%; height: 100%; background: url(../images/loading-spinning-bubbles.svg) no-repeat 50% 50%; background-color: #c10000; position: fixed; left: 0; top: 0; z-index: 99999; }
 
-.header { height: 100vh; /*display: flex; position: relative;*/ }
-.header-bg { width: 100%; height: 100%; background: url(../images/BGindex.jpg) 50% 50%; /*background-size: 100%;*/ }
+.header { height: 100vh; background: #c10000; /*display: flex; position: relative;*/ }
+.header-bg { width: 100%; height: 100%; /*background: url(../images/BGindex.jpg) 50% 50%;*/ /*background-size: 100%;*/ }
 .btn-nextArrow { width: 31px; height: 27px; background: url(../images/nextArrow.png); background-size: 100%; position: absolute; left: 50%; bottom: 3em; margin-left: -20px; z-index: 99; }
 
 /*----- ABOUT -----*/
 .container-block { width: 100%; max-width: 1000px; letter-spacing: 0.1em; margin: 0 auto;  padding: 2em 0; text-align: center; }
 .gray { background: #EEE; }
-h1 { color: #c10000; font: 3em 'Comfortaa', cursive; margin: 0; padding: 0.67em 0 0.3em 0; }
-h2 { color: #ff4949; font: bold 2em 'Noto Sans TC', sans-serif; margin: 0; }
+h1 { color: #c10000; font: bold 3.5em 'Comfortaa', cursive; margin: 0; padding: 0.67em 0 0.3em 0; }
+/*h2 { color: #ff4949; font: bold 2em 'Noto Sans TC', sans-serif; margin: 0; }*/
+h2 { color: #ff4949; font: 2em 'Comfortaa', cursive; margin: 0.5em 0; }
 h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .title { /*padding: 0 0 1em 0;*/ }
 .sub-header { width: 205px; height: 25px; background: url(../images/baseline.png) no-repeat; margin: 0 auto; }
 /*-- EXPERIENCE --*/
-.experience-block { width: 100%; margin: 3em 0 4em 0; }
+.experience-block { width: 100%; margin: 3.5em 0 4em 0; }
 .experience-block>ul { display: flex; justify-content: center; align-items: stretch; }
 .experience-block>ul>li { width:46.5%; background: #EEE; box-shadow: inset 0 0 0 10px #EEE, inset 0 0 0 12px #FFF; flex: none; font-size: 1.1em; margin: 0 1%; padding: 2em; position: relative; text-align:justify; text-justify: distribute; }
 .logoPU { width: 90px; height: 90px; perspective: 700; position: absolute; left: 50%; top: -34px; margin-left: -45px; }
@@ -40,7 +41,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .experience-title { font-size: 1.2em; padding-bottom: 1em; text-align: center; }
 .experience-depict { color: #787878; }
 /*-- SKILL --*/
-.skill-block { width: 100%; padding: 0.5em 0 3em 0; }
+.skill-block { width: 100%; padding: 0 0 3em 0; }
 .skill-block>ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto; }
 .skill-block>ul>li { font-size: 3em; flex: none; margin: 0 2%; }
 
@@ -87,7 +88,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 
 
 @media screen and (max-width:1024px) {
-    .header { height: 100vmin; }
+    .header { height: 100vmax; }
     .btn-nextArrow { display: none; }
     /*.gallery a { height: 290px; }*/
 }
