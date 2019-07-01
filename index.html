@@ -12,12 +12,22 @@
     <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
     <link rel="stylesheet" type="text/css" href="css/baguetteBox.css">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/loading-overlay.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
     <script type="text/javascript" src="scripts/jquery.section-scroll.js"></script>
     <script type="text/javascript" src="scripts/baguetteBox.js"></script>
+    <script type="text/javascript" src="scripts/loading-overlay.js"></script>
 </head>
 <body>
+	<div id="target" class="loading">
+  		<div class="loading-overlay">
+    		<p class="loading-spinner">
+      			<span class="loading-icon"></span>
+      			<span class="loading-text">loading</span>
+    		</p>
+  		</div>
+	</div>
 	<div class="scrollable-section header" data-section-title="首頁">
 		<!--<div class="btn-nextArrow"></div>-->
 		<div class="header-bg"></div>
@@ -125,10 +135,16 @@
 	</div>
 </body>
 <script type="text/javascript">
+	jQuery(function($) {
+    	// Calling the plugin
+    	// (prepends a div.loading to the target element)
+    	$('#target').loadingOverlay();
+ 
+    	// Removing the loading overlay
+    	$('#target').loadingOverlay('remove');
+	});
+
 	window.onload = function() {
-		baguetteBox.run('.gallery', {
-    		preload: 9;
-		});
 	    baguetteBox.run('.baguetteBoxThree', {
 	        animation: 'fadeIn',
 	        noScrollbars: true
@@ -138,6 +154,7 @@
 	        hljs.initHighlighting();
 	    }
 	};
+
   	$(document).ready(function () { 
       	$('body').sectionScroll(); 
   	});
