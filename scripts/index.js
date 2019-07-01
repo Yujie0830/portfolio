@@ -8,6 +8,9 @@ $(window).load(function () {
 	Postion();
 	banner();
 
+	// Wait for window load
+	$("#page-loading").fadeOut("slow");
+
 	$('.btn-more a').click(function(){
 		$('.active').removeClass("fadeOut");
 		$('.active').addClass("fadeIn");		

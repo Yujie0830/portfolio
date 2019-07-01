@@ -11,10 +11,7 @@ a { display: block; text-decoration: none; }
 ul,li { list-style: none; margin: 0; padding: 0; }
 
 
-
-
-
-.loading{ background:url("../images/loading_red.gif") 50% no-repeat #fff; width:100%; height:100%; overflow:hidden; position:fixed; left:0; top:0; z-index:100; }
+#page-loading { width: 100%; height: 100%; background: url(../images/loading-spinning-bubbles.svg) no-repeat 50% 50%; background-color: #ff4949; position: fixed; left: 0; top: 0; z-index: 99999; }
 
 .header { height: 100vh; /*display: flex; position: relative;*/ }
 .header-bg { width: 100%; height: 100%; background: url(../images/BGindex.jpg) 50% 50%; /*background-size: 100%;*/ }
