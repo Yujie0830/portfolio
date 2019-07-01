@@ -58,7 +58,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .banner-block, .web-block { width: 100%; margin: 0 0 1em 0; }
 .banner-block ul, .web-block ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding-bottom: 1.5em; }
 .banner-block ul>li, .web-block ul>li { width: 33%; flex: none; padding: 0.5% 1.5%; }
-.banner-block .banner-btn-block li, .web-block .banner-btn-block li { width: 18%; flex: none; padding: 0.5% 1.5%; }
+.banner-block .btn-block li, .web-block .btn-block li { width: 18%; flex: none; padding: 0.5% 1.5%; }
 
 .gallery:after {
 	content: '';
@@ -101,7 +101,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 	.experience-block>ul>li:first-child { margin: 0 0 3em 0; }
 	.skill-block { width: 80%; padding: 0 0 3em 0; margin: 0 auto; }
 	.skill-block>ul>li { font-size: 4em; margin: 0 6%; }
-	.banner-block ul>li { width: 46.5%; padding: 1% 1.5%; }
-	.banner-block .banner-btn-block li { width: 35%; }
+	.banner-block ul>li, .web-block ul>li { width: 46.5%; padding: 1% 1.5%; }
+	.banner-block .btn-block li, .web-block .btn-block li { width: 35%; }
 	.mail { width: 100%; }
 }

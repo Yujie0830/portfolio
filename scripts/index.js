@@ -15,11 +15,6 @@ $(window).load(function () {
 		$('.active').removeClass("fadeOut");
 		$('.active').addClass("fadeIn");		
 	});
-
-	$('.btn-back a').click(function(){
-		$('.active').removeClass("fadeIn");
-		$('.active').addClass("fadeOut");		
-	});
 });
 
 $(window).resize(function () {
