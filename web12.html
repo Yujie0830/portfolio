@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搓麻將 每月例行活動</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/logo.png" />
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300|Poiret+One&display=swap" rel="stylesheet">
+	<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/web-style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightcase.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/lightcase.js"></script>
+</head>
+<body>
+	<div class="web-container">
+		<div class="web-header">
+			<div class="kind"><i class="flaticon-computer"></i></div>
+			<div class="article-title">搓麻將 每月例行活動</div>
+			<!--<div class="baseline"></div>-->
+			<div class="link"><a href="#" target="_blank">LINK</a></div>
+		</div>
+		<div class="JPG-block">
+			<p><img src="images/web/web012-1.jpg" alt=""></p>
+		</div>
+		<div class="btn-web-top"><a href="#">TOP</a></div>
+	</div>
+</body>
+<script>
+	$('.btn-web-top a').click(function(){
+		var $MENU_info = (window.opera) ? (document.compatMode === "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$MENU_info.animate({
+			scrollTop: $('html').offset().top
+		}, 400, 'linear'); 
+		return false;
+	});
+</script>
+</html>
