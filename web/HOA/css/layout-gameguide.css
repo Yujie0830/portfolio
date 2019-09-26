@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+P {
+	padding: 3% 0;
+}
+.h1-title {
+	width: 100%;
+	height: auto;
+}
+
+
+/*------------------- 側欄 -------------------*/
+.sidebar {
+	width: 100%;
+	max-width: 205px;
+	background: url(../images/game_guide/sideBar-bg.png) no-repeat center top;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 9999;
+}
+.sidebar ul {
+	padding: 14% 12.5%;
+}
+.sidebar ul li {
+	width: 100%;
+	filter: opacity(.4);
+	max-width: 155px;
+	padding-bottom: 10%;
+}
+.sidebar ul li:hover {
+	filter: opacity(1.4);
+}
+
+
+/*---------------- 回到最頂端按鈕 ----------------*/
+#sorolldiv1 { width:40px; height:43px; position:absolute;}
+#sorolldiv1 a { width:100%; height:100%; background:url(../images/go_top.png) no-repeat; display:block;}
+#sorolldiv1 a:hover { background-position:0 2px;}
+
+
+/*------------------- 主內容 -------------------*/
+.gameGuide-content-block {
+	margin: 3% 0 0 0;
+}
+.content-img-01 {
+	width: 42.5%;
+	/* max-width: 340px; */
+	float: left;
+}
+.content-txt-01 {
+	float: left;
+	font-size: 0.8em;
+	margin: 0 0 0 2%;
+}
+.content-txt-02 {
+	font-size: 0.8em;
+	margin: 0 0 0 2%;
+}
+.content-txt-02 P {
+	padding: 1.5% 0;
+}
+.btn-teachMovie {
+	width: 100%;
+	max-width: 150px;
+	border-radius: 50px;
+	border: 1px solid #eee;
+	line-height: 2em;
+	letter-spacing: 0.1em;
+	margin: 0 auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+.divider {
+	width: 98%;
+	margin: 1% 0 5% 0;
+}
+
+@media screen and (max-width:920px) {
+	.sidebar { display: none; }
+	.content-txt-01 {
+		font-size: 0.7em;
+	}
+}
+@media screen and (max-width:730px) {
+	.content-txt-01 {
+		font-size: 0.625em;
+		line-height: 2em;
+	}
+	.content-txt-02 {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.h1-title {
+		width: 100%;
+	}
+	.divider {
+		padding: 8% 0;
+	}
+	/* 01 新手引導 */
+	.content-img-01 {
+		width: 68.6%;
+		float: none;
+		margin: 0 auto;
+	}
+	.content-txt-01, .content-txt-02 {
+		font-size: 0.8em;
+		float: none;
+		line-height: 1.8em;
+	}
+	.btn-teachMovie {
+		line-height: 1.7em;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.content-txt-01, .content-txt-02 {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (max-width:380px) {
+	.content-txt-01, .content-txt-02 {
+		font-size: 0.65em;
+	}
+}

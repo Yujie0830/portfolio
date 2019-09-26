@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+div{ font-size: 1em;}
+.clear{ width: 0; }
+.hero_block{ width:100%; max-width:1000px; margin: 0 auto; padding:0 0 3vh 0;}
+
+.hero_block .title{width:100%; font-size:2em; font-weight: bold;}
+
+.hero_block .content{width:100%; /*padding:2vh 0;*/}
+
+.hero_block ul li{display: block;}
+
+/*-----------英雄分類按鈕區-----------*/
+.type_btn{width:100%; padding: 2vh 0 0 0;}
+.type_btn ul{width:100%;}
+
+.type_btn ul li{width:20%; font-size: 1em; line-height:2em; text-align:center; float:left;}
+.type_btn ul li a{width:100%; border-bottom:2px solid #fff; display: block;}
+.type_btn ul li:hover a,.type_btn ul li.active a{ border-bottom:2px solid #ffd649; color:#ffd649; font-weight: bold;}
+
+
+
+/*-----------英雄分類頭像列表區-----------*/
+.hero_list_block{width:100%; padding:2% 0;}
+.hero_list_block ul{width:100%; display: flex; flex-wrap: wrap;} 
+
+.hero_list_block ul li{width:18%; padding:2% 1% 0; float:left; position: relative;}
+.hero_list_block ul li:last-child{padding:0;}
+.hero_list_block ul li .pic{width:100%; /*border: 2px solid #fbd84a;*/ background-size: contain; background-repeat: no-repeat;}
+.hero_list_block ul li .pic img{ width:100%; height:auto; opacity:0;}
+.hero_list_block ul li:hover .pic img{ opacity:1;}
+.hero_list_block ul li .name{width:100%; font-size: 0.8em; line-height:2em; text-align: center;}
+.hero_list_block ul li:hover .name{color:#fbd84a;}
+
+/*英雄頭像圖指定*/
+	/*英雄分類-坦克*/
+	.hero_list_block ul li.hero_1_1 .pic{background-image: url(../images/game_guide/hero/icon_hero_1_1.jpg);}
+	.hero_list_block ul li.hero_1_2 .pic{background-image: url(../images/game_guide/hero/icon_hero_1_2.jpg);}
+	.hero_list_block ul li.hero_1_3 .pic{background-image: url(../images/game_guide/hero/icon_hero_1_3.jpg);}
+	.hero_list_block ul li.hero_1_4 .pic{background-image: url(../images/game_guide/hero/icon_hero_1_4.jpg);}
+	.hero_list_block ul li.hero_1_5 .pic{background-image: url(../images/game_guide/hero/icon_hero_1_5.jpg);}
+	.hero_list_block ul li.hero_1_6 .pic{background-image: url(../images/game_guide/hero/icon_hero_1_6.jpg);}
+
+	/*英雄分類-法師*/
+	.hero_list_block ul li.hero_2_1 .pic{background-image: url(../images/game_guide/hero/icon_hero_2_1.jpg);}
+	.hero_list_block ul li.hero_2_2 .pic{background-image: url(../images/game_guide/hero/icon_hero_2_2.jpg);}
+	.hero_list_block ul li.hero_2_3 .pic{background-image: url(../images/game_guide/hero/icon_hero_2_3.jpg);}
+	.hero_list_block ul li.hero_2_4 .pic{background-image: url(../images/game_guide/hero/icon_hero_2_4.jpg);}
+	.hero_list_block ul li.hero_2_5 .pic{background-image: url(../images/game_guide/hero/icon_hero_2_5.jpg);}
+	.hero_list_block ul li.hero_2_6 .pic{background-image: url(../images/game_guide/hero/icon_hero_2_6.jpg);}
+
+	/*英雄分類-刺客*/	
+	.hero_list_block ul li.hero_3_1 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_1.jpg);}
+	.hero_list_block ul li.hero_3_2 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_2.jpg);}
+	.hero_list_block ul li.hero_3_3 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_3.jpg);}
+	.hero_list_block ul li.hero_3_4 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_4.jpg);}
+	.hero_list_block ul li.hero_3_5 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_5.jpg);}
+	.hero_list_block ul li.hero_3_6 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_6.jpg);}
+	.hero_list_block ul li.hero_3_7 .pic{background-image: url(../images/game_guide/hero/icon_hero_3_7.jpg);}
+
+	/*英雄分類-遠程*/
+	.hero_list_block ul li.hero_4_1 .pic{background-image: url(../images/game_guide/hero/icon_hero_4_1.jpg);}
+	.hero_list_block ul li.hero_4_2 .pic{background-image: url(../images/game_guide/hero/icon_hero_4_2.jpg);}
+	.hero_list_block ul li.hero_4_3 .pic{background-image: url(../images/game_guide/hero/icon_hero_4_3.jpg);}
+	.hero_list_block ul li.hero_4_4 .pic{background-image: url(../images/game_guide/hero/icon_hero_4_4.jpg);}
+	.hero_list_block ul li.hero_4_5 .pic{background-image: url(../images/game_guide/hero/icon_hero_4_5.jpg);}
+	.hero_list_block ul li.hero_4_6 .pic{background-image: url(../images/game_guide/hero/icon_hero_4_6.jpg);}
+
+
+
+/*-----------單獨英雄介紹區-----------*/
+.info_block{width:100%; padding:2% 0;}
+.info_block ul{width:100%;}
+.info_block ul li .pic{width:100%; background-size: contain; background-repeat: no-repeat; /*background-color:#666;*/ }
+.info_block ul li .pic img{ width:100%; height:auto;}
+.info_block ul li .info{width:100%; font-size: 0.8em; line-height:1.8em;}
+.info_block ul li p{padding: 1.5% 0;}
+
+/*英雄角色大圖指定*/
+	/*英雄分類-坦克*/
+	.info_block ul li.hero_1_1 .pic{background-image: url(../images/game_guide/hero/hero_1_1.png);}
+	.info_block ul li.hero_1_2 .pic{background-image: url(../images/game_guide/hero/hero_1_2.png);}
+	.info_block ul li.hero_1_3 .pic{background-image: url(../images/game_guide/hero/hero_1_3.png);}
+	.info_block ul li.hero_1_4 .pic{background-image: url(../images/game_guide/hero/hero_1_4.png);}
+	.info_block ul li.hero_1_5 .pic{background-image: url(../images/game_guide/hero/hero_1_5.png);}
+	.info_block ul li.hero_1_6 .pic{background-image: url(../images/game_guide/hero/hero_1_6.png);}
+
+	/*英雄分類-法師*/
+	.info_block ul li.hero_2_1 .pic{background-image: url(../images/game_guide/hero/hero_2_1.png);}
+	.info_block ul li.hero_2_2 .pic{background-image: url(../images/game_guide/hero/hero_2_2.png);}
+	.info_block ul li.hero_2_3 .pic{background-image: url(../images/game_guide/hero/hero_2_3.png);}
+	.info_block ul li.hero_2_4 .pic{background-image: url(../images/game_guide/hero/hero_2_4.png);}
+	.info_block ul li.hero_2_5 .pic{background-image: url(../images/game_guide/hero/hero_2_5.png);}
+	.info_block ul li.hero_2_6 .pic{background-image: url(../images/game_guide/hero/hero_2_6.png);}
+
+	/*英雄分類-刺客*/	
+	.info_block ul li.hero_3_1 .pic{background-image: url(../images/game_guide/hero/hero_3_1.png);}
+	.info_block ul li.hero_3_2 .pic{background-image: url(../images/game_guide/hero/hero_3_2.png);}
+	.info_block ul li.hero_3_3 .pic{background-image: url(../images/game_guide/hero/hero_3_3.png);}
+	.info_block ul li.hero_3_4 .pic{background-image: url(../images/game_guide/hero/hero_3_4.png);}
+	.info_block ul li.hero_3_5 .pic{background-image: url(../images/game_guide/hero/hero_3_5.png);}
+	.info_block ul li.hero_3_6 .pic{background-image: url(../images/game_guide/hero/hero_3_6.png);}
+	.info_block ul li.hero_3_7 .pic{background-image: url(../images/game_guide/hero/hero_3_7.png);}
+
+	/*英雄分類-遠程*/
+	.info_block ul li.hero_4_1 .pic{background-image: url(../images/game_guide/hero/hero_4_1.png);}
+	.info_block ul li.hero_4_2 .pic{background-image: url(../images/game_guide/hero/hero_4_2.png);}
+	.info_block ul li.hero_4_3 .pic{background-image: url(../images/game_guide/hero/hero_4_3.png);}
+	.info_block ul li.hero_4_4 .pic{background-image: url(../images/game_guide/hero/hero_4_4.png);}
+	.info_block ul li.hero_4_5 .pic{background-image: url(../images/game_guide/hero/hero_4_5.png);}
+	.info_block ul li.hero_4_6 .pic{background-image: url(../images/game_guide/hero/hero_4_6.png);}
+
+
+
+/*回英雄列表按鈕*/
+/*
+.btn_back_hero_block{width:30%; margin:3vh auto; font-size: 1.4em; line-height:2em;}
+.btn_back_hero_block a{width:100%; text-align: center; color:#fbd84a; border: 2px solid #fbd84a; display: block;}
+.btn_back_hero_block a:hover{ background:rgba(251,216,74,0.8); color:#000; font-weight: bold;}
+*/
+.btn_back_hero_block {
+	width: 100%;
+	max-width: 180px;
+	border-radius: 50px;
+	border: 1px solid #eee;
+	letter-spacing: 0.1em;
+	line-height: 1.7em;
+	margin: 0 auto;
+	margin-top: 3%;
+	text-align: center;
+}
+
+
+@media screen and (max-width:730px) {
+	.type_btn {
+		font-size: 0.9em;
+	}
+	.info_block {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width:640px) {
+	.type_btn, .hero_list_block {
+		font-size: 0.9em;
+	}
+	.hero_list_block ul li {
+		width: 23%;
+	}
+	.hero_list_block ul li:hover .pic img { opacity:0; }
+	.hero_list_block ul li:hover .name { color:#fff; }
+	.info_block {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width:380px) {
+	.type_btn, .hero_list_block {
+		font-size: 0.7em;
+	}
+	.hero_list_block ul li {
+		width: 31%;
+	}
+	.hero_list_block ul li .name { font-size: 1.1em; }
+	.info_block {
+		font-size: 0.85em;
+	}
+}

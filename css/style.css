@@ -5,7 +5,7 @@
 *::selection { color: #FFF; background: #ff4949; }
 
 html { font-size: 100%; }
-body { background: #FFF; font: 1em/1.5 'Microsoft JhengHei','Noto Sans TC', sans-serif; /*font-size: 16px;*/ }
+body { background: #FFF; font: 1em/1.5 'Microsoft JhengHei','Noto Sans TC', sans-serif; }
 img { border: 0; }
 a { display: block; text-decoration: none; }
 ul,li { list-style: none; margin: 0; padding: 0; }
@@ -41,10 +41,7 @@ ul,li { list-style: none; margin: 0; padding: 0; }
 .burger.open .icon { background: transparent; }
 .burger.open .icon:before { transition: transform 0.5s; transform: rotateZ(45deg) translate(1.5vmin, 1.8vmin); }
 .burger.open .icon:after { transition: transform 0.5s; transform: rotateZ(-405deg) translate(0.8vmin, -1.5vmin); }
-/*
-.burger.open .icon:before { transition: transform 0.5s; transform: rotateZ(45deg) translate(15px, 20px); }
-.burger.open .icon:after { transition: transform 0.5s; transform: rotateZ(-405deg) translate(15px, -20px); }
-*/
+
 
 /*---------- HEADER ----------*/
 .header { height: 100vh; background: #c10000; position: relative; }
@@ -56,9 +53,6 @@ ul,li { list-style: none; margin: 0; padding: 0; }
 .ex2 span { position: relative; left: 0; opacity: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .designer { animation-delay: 3.5s; color: #ff9595; font: 3vmin 'Comfortaa', cursive; letter-spacing: 0.2em; line-height: 1.5em; margin: 2vmin 0 0 0; }
 .header-bg { width: 100%; height: 100%; box-shadow: inset 0 0 0 7.3vmin #c10000, inset 0 0 0 8vmin #FFF; position: relative; overflow: hidden; }
-/*
-.header-bg ul { width: 100vmin; height: 100vmax; }
-*/
 .header-bg ul>li { width: 100%; height: 100%; animation: slide 25s infinite; background: url(../images/BGindex-01.jpg) no-repeat 50% 8vmin; background-clip: content-box; background-size: cover; padding: 8vmin; position: absolute; opacity: 0; overflow: hidden; }
 .header-bg ul>li:nth-child(2) { animation-delay: 5s; background: url(../images/BGindex-02.jpg) no-repeat 50% 8vmin; background-clip: content-box; background-size: cover; padding: 8vmin; }
 .header-bg ul>li:nth-child(3) { animation-delay: 10s; background: url(../images/BGindex-03.jpg) no-repeat 50% 8vmin; background-clip: content-box; background-size: cover; padding: 8vmin; }
@@ -69,19 +63,14 @@ ul,li { list-style: none; margin: 0; padding: 0; }
 	20% { opacity: 1; }
 	30% { opacity: 0; }
 }
-/*
-.btn-nextArrow { width: 31px; height: 27px; background: url(../images/nextArrow.png); background-size: 100%; position: absolute; left: 50%; bottom: 3em; margin-left: -20px; z-index: 99; }
-*/
 
 
 /*---------- ABOUT ----------*/
 .container-block { width: 100%; max-width: 1000px; letter-spacing: 0.1em; margin: 0 auto;  padding: 2em 0; text-align: center; }
 .gray { background: #EEE; }
 h1 { color: #c10000; font: bold 3.5em 'Comfortaa', cursive; margin: 0; padding: 0.67em 0 0.3em 0; }
-/*h2 { color: #ff4949; font: bold 2em 'Noto Sans TC', sans-serif; margin: 0; }*/
 h2 { color: #ff4949; font: 2em 'Comfortaa', cursive; margin: 0.5em 0; }
 h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
-.title { /*padding: 0 0 1em 0;*/ }
 .sub-header { width: 205px; height: 25px; background: url(../images/baseline.png) no-repeat; margin: 0 auto; }
 /*-- EXPERIENCE --*/
 .experience-block { width: 100%; margin: 3.5em 0 4em 0; }
@@ -117,7 +106,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 .banner-block .btn-block li, .web-block .btn-block li { width: 18%; flex: none; font-size: 1em; padding: 0.5% 1.5%; }
 .gallery li img { width: 100%; height: 100%; -webkit-filter: grayscale(80%); /* Safari */ filter: grayscale(80%); }
 .gallery li img:hover { opacity: 0.3; -webkit-filter: grayscale(100%); /* Safari */ filter: grayscale(100%); }
-.gallery li a { /*display: inline-block;*/ font-size: 0; /*position: relative;*/ overflow: hidden; z-index: 99; }
+.gallery li a { font-size: 0; overflow: hidden; z-index: 99; }
 .gallery-mask { width: 100%; height: 100%; background: url(../images/hover.png) no-repeat; background-size: 100%; position: absolute; left: 0; top: 0; opacity: 1; }
 
 
@@ -151,7 +140,7 @@ h3 { color: #a0a0a0; font: 1em 'Comfortaa', cursive; margin-top: 0.5em; }
 	.experience-block>ul>li:first-child { margin: 0 0 3em 0; }
 	.skill-block { width: 80%; padding: 0 0 3em 0; margin: 0 auto; }
 	.skill-block>ul>li { font-size: 4em; margin: 0 6%; }
-	.banner-block ul>li, .web-block ul>li { width: 43.5%; /*padding: 1% 1.5%;*/ }
+	.banner-block ul>li, .web-block ul>li { width: 43.5%; }
 	.banner-block .btn-block li, .web-block .btn-block li { width: 35%; }
 	.mail { width: 100%; }
 }

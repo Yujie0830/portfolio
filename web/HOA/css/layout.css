@@ -1,0 +1,621 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('reset.min.1.2.css');
+
+/*像素比例尺*/
+.ruler {
+	height: 18px;
+	background: url(../images/ruler.png) no-repeat left top;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+body {
+	background-color: #000;
+	color: #FFF;
+	font-family: 微軟正黑體;
+	font-size: 14px;
+	/* line-height: 0px; */
+	margin: 0 auto;
+	padding: 0;
+}
+img {
+	width: 100%;
+	height: auto;
+	border: 0;
+}
+a {
+	color: #cdd5df;
+	display: block;
+	text-decoration: none;
+}
+.wrap {
+	width: 100%;
+	background: url(../images/wrap-bg.jpg) no-repeat 50% 0;
+}
+.music_hide {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	visibility:hidden;
+	z-index:-99;
+}
+.off-L, .off-s, .FB-plugin-s {
+	display: none;
+}
+.clear {
+	height: 0;
+	clear: both;
+}
+/*------------------- MENU -------------------*/
+.menu {
+	width: 100%;
+	height: auto;
+}
+.menu-content {
+	width: 100%;
+	/* max-width: 1000px; */
+	margin: 0 auto;
+}
+.logo-menu-block {
+	width: 100%;
+	height: auto ;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.menu-logo {
+	width: 18%;
+	/* max-width: 192px; */
+	float: left;
+	padding: 0.2% 0 0 0;
+	/* position: absolute; */
+	position: relative;
+	z-index: 1;
+}
+.menu-logo a:hover {
+	filter: brightness(120%);
+}
+.menu-block {
+	width: 83%;
+	float: right;
+	text-align: right;
+	/* position: absolute; */
+	margin-top: -4.5%;
+	position: relative;
+	z-index: 1;
+}
+.menu-block ul {
+	width: 100%;
+	display: inline;
+	list-style: outside none none;
+	padding: 0;
+}
+.menu-block li {
+	width: 13%;
+	max-width: 105px;
+	display: inline-block;
+	margin: 0 1.5% 0 1.5%;
+}
+.menu-bg {
+	width: 100%;
+	/* max-width: 1555px; */
+	height: 130px;
+	background: url(../images/menu-bg.png) no-repeat 50% 0;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	top: 4.1em;
+	z-index: 0;
+}
+/*------------------- 主內容 -------------------*/
+.main-content {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;/* margin-top: 29.5em; */
+}
+.btn-moviePlay {
+	width: 16%;
+	max-width: 176px;
+	margin: 0 auto;
+}
+.btn-moviePlay a:hover {
+	filter: brightness(150%);
+}
+/*----- 3個下載平台 -----*/
+.download-block {
+	text-align: center;/* margin: 14% 0 0 0; */
+}
+.download-block ul {
+	display: inline;
+	list-style: none;
+	margin: 0 0 0 3%;
+	padding: 0;
+}
+.download-block li {
+	width: 18.2%;
+	display: inline-block;
+}
+.download-block li:hover {
+	filter: brightness(145%);
+}
+/*----- Banner輪播 -----*/
+.banner-news {
+	width: 100%;
+	margin: 1% 0 0 0;
+}
+.bg_news_con_banner {
+	width: 49%;
+	max-width: 540px;
+	align-items: center;
+	display: flex;
+	float: left;
+	position: relative;
+	justify-content: center;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+.banner_frame {
+	width: 100%;
+	max-width: 644px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 3;
+}
+#abgneBlock {
+	width: 92.5%;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-align: center;
+}
+#abgneBlock ul.list {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+#abgneBlock ul.list li {
+	width: 100%;
+	height: auto;
+	display: block;
+	float: left;
+	margin: 0 auto;
+}
+#abgneBlock ul.list li a {
+	display: block;
+}
+#abgneBlock ul.list li img {
+	width: 100%;
+	height: auto;
+	border: 0px;
+	float: left;
+}
+/*----- 最新消息 -----*/
+.news-block {
+	width: 49%;
+	float: right;
+}
+.news-frame {
+	width: 100%;
+	max-width: 539px;
+}
+.news {
+	width: 26.5em;
+	height: auto;
+	color: #cdd5df;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	padding: 1em 1.3em;
+	position: absolute;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*-- 分頁 --*/
+.news-tabs {
+	border-bottom: 1px solid #cdd5df;
+	padding: 2% 0 0 0;
+}
+.news-tabs ul {
+	width: 100%;
+}
+.news-tabs li {
+	width: 19%;
+	display: inline-block;
+	font-size: 1.5em;
+	line-height: 1.6em;
+	list-style: none;
+	text-align: center;
+}
+.news-tabs a:hover, .news-tabs li.active a{
+	width: 100%;
+	color: #ffd649;
+	border-bottom: 3px solid #ffd649;
+
+}
+.news-tabs-new {
+	color: #cdd5df;
+	z-index: 99;
+}
+.news-tabs .btn-more {
+	width: 17.3%;
+	
+}
+.news-tabs .btn-more:hover {
+	border: 0;
+	filter: brightness(130%);
+	padding: 0;
+}
+/*-- 標題列表 --*/
+.news-list {
+	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.news-list ul {
+}
+.news-list li {
+	border-bottom: 1px solid #242424;
+	letter-spacing: 0.1em;
+	line-height: 2.2em;
+	list-style: none;
+	/* margin: 0 0 1.2% 0; */
+	margin: 0 0 0.2em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.news-list li:nth-child(n+6) {
+	border: 0;
+}
+.news-list li a:hover {
+	color: #ffd649;
+}
+/*----- 專區按鈕 -----*/
+.btns-FB-man {
+	width: 100%;
+	margin: 1% 0 0 0;
+}
+.btns {
+	width: 32%;
+	/* display: inline-block; */
+	float: left;/* margin: 1% 0 0 0; */
+}
+.btns ul {
+	list-style: none;
+	padding: 0;
+}
+.btns li {
+	width: 100%;
+	max-width: 351px;
+	margin: 4.7% 0;
+}
+.btns li:hover {
+	filter: brightness(130%);
+}
+/*----- FB粉專 -----*/
+.FB-block {
+	width: 48.5%;
+	margin: 1.5% 0 0 1%;
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+.FB-frame {
+	position: relative;
+}
+.FB-frame img {
+	width: 100%;
+	height: auto;
+}
+.b1, .fb_b, #fb-box-container {
+	display: block!important;
+}
+.s1, .fb_s, #fb-box-container_s, .mobile_link {
+	display: none!important;
+}
+.fb-page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+/*----- 男角 -----*/
+.man_block {
+	/* width: 16.9%; */
+	width: 21.5%;
+	max-width: 247px;
+	background: url(../images/man.png) no-repeat 0 0;
+	display: inline-block;
+	float: left;
+	margin: 2.5em 0 0 -2em;
+	position: absolute;
+	z-index: 999;
+}
+/*------------------- 版權 -------------------*/
+.copyright {
+}
+.copyright-txt-block {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+.copyright-txt {
+	background: url(../images/copyright.png) no-repeat 50% 0;
+	background-size: 100%;
+	position: absolute;
+}
+.copyright-bg {
+	width: 100%;
+	max-width: 1555px;
+	height: 130px;
+	background: url(../images/copyright-bg.png) no-repeat 50% 0;
+	margin: 0 auto;
+}
+
+@media screen and (max-width:1100px) {
+.on, .off-s {
+	display: none;
+}
+.off-L {
+	display: block;
+}
+.wrap {
+	background: url(../images/wrap-bg-w1100.jpg) no-repeat 50% 0;
+	background-size: 100%;
+}
+.menu-bg {
+	height: auto;
+	background: url(../images/menu-bg-w1100.png) no-repeat 50% 0;
+	background-size: 100%;
+}
+.main-content {
+/* margin-top: 37%; */
+}
+.news {
+	width: 43%;
+	font-size: 100%;
+	/* padding: 2% 2%; */
+}
+.news-list li {
+	font-size: 1.2em;
+}
+.man_block {
+	width: 20%;
+	margin: 3em 0 0 -2%;
+	background-size: 100%;
+}
+.FB-plugin {
+	padding: 1.5% 1.6%;
+}
+.news-list {
+}
+.copyright-txt {
+	background: url(../images/copyright-w1100.png) no-repeat 50% 0;
+	background-size: 100%;
+}
+.copyright-bg {
+	height: auto;
+	background: url(../images/copyright-bg-w1100.png) no-repeat 50% 0;
+	background-size: 100%;
+}
+}
+
+@media screen and (max-width:1000px) {
+	.news-list li:nth-child(n+6) {
+		display:none;
+	}
+	.news-list li:nth-child(n+5) {
+	border: 0;
+	}
+}
+
+@media screen and (max-width:850px) {
+.news-list li:nth-child(n+5) {
+	display: none;
+}
+.news-list li:nth-child(n+4) {
+	border: 0;
+}
+}
+
+@media screen and (max-width:750px) {
+.news-list li:nth-child(n+4) {
+	display: none;
+}
+.news-list li:nth-child(n+3) {
+	border: 0;
+}
+}
+
+@media screen and (max-width:640px) {
+.on, .on-L, .off-L {
+	display: none;
+}
+.off-s {
+	display: block;
+}
+.wrap {
+	background: url(../images/wrap-bg-w640.jpg) no-repeat 50% 0;
+	background-size: 100%;
+}
+.menu-bg {
+	height: auto;
+	background: url(../images/menu-bg-w640.png) no-repeat 50% 0;
+	background-size: 100%;
+}
+.menu-logo {
+	width: 31%;
+	margin: 0.3% 0 0 0;
+}
+.menu-block {
+	width: 69.1%;
+	margin: -8.5% 0 0 0;
+}
+.menu-block li {
+	width: 22%;
+	margin: 0 1% 0 0;
+}
+.main-content {
+/* margin-top: 47%; */
+}
+.btn-moviePlay {
+	width: 28%;
+}
+.download-block {
+/* margin: 20% 0 0 0; */
+}
+.download-block ul {
+	margin: 0 1% 0 0;
+}
+.download-block li {
+	width: 29.3%;
+}
+.main-content {
+	/* margin-left: 2%; */
+	text-align: center;
+}
+.bg_news_con_banner {
+	width: 87%;
+	margin-left: 7%;
+}
+.news-block {
+	width: 87%;
+	display: inline-block;
+	float: none;
+	margin: 4% 0 0 0;
+}
+.news {
+	width: 77%;
+	margin: 0 0 0 2%;
+}
+.news-tabs {
+	padding: 5% 0 0 0;
+}
+.news-tabs li {
+	width: 20.5%;
+	font-size: 2em;
+}
+.news-tabs .btn-more {
+	width: 15%;
+}
+.news-list li {
+	font-size: 1.8em;
+	margin: 0 0 2% 0;
+}
+.btns {
+	width: 87%;
+	float: none;
+	margin: 0 auto;
+}
+.btns li {
+	max-width: 550px;
+}
+.FB-block {
+	width: 87%;
+	display: inline-block;
+	float: none;
+	/* margin: 4% 0 0 0;
+		padding: 0 6.9% 0 0; */
+	margin: 0 0 3% 0;
+}
+.FB-block li {
+	margin: 0;
+}
+.FB-plugin {
+	display: none;
+}
+.FB-plugin-s {
+	display: block;
+	padding: 2.5% 3%;
+	position: absolute;
+	z-index: 999;
+}
+.b1, .fb_b, #fb-box-container {
+	display: none!important;
+}
+.s1, .fb_s, #fb-box-container_s {
+	display: block!important;
+}
+.man_block {
+	display: none;
+}
+.copyright-txt {
+	background: url(../images/copyright-w640.png) no-repeat 50% 0;
+	background-size: 100%;
+}
+.copyright-bg {
+	background: url(../images/copyright-bg-w640.png) no-repeat 50% 0;
+	background-size: 100%;
+}
+}
+
+@media screen and (max-width:500px) {
+	.news {
+		margin: 0;
+		padding: 0.7em 1.3em;
+	}
+.news-tabs li {
+	width: 20%;
+	font-size: 1.5em;
+}
+.news-list li {
+	font-size: 1.4em;
+}
+}
+
+@media screen and (max-width:390px) {
+.menu-block li {
+	width: 21%;
+}
+	.news {
+		margin: 0;
+		padding: 0.7em 1em;
+	}
+.news-tabs li {
+	width: 19%;
+	font-size: 1.2em;
+}
+.news-list li {
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+.news-list li:nth-child(n+2) {
+	border: 0;
+}
+/*
+.news-list li:nth-child(n+3) {
+	display: none;
+}
+*/
+}
+
+@media screen and (max-width:305px) {
+.menu-bg {
+	margin: 5% 0 0 0;
+}
+	.news-tabs li {
+		width: 18%;
+		font-size: 1.2em;
+	}
+	.news-list {
+		margin-top: 4%;
+	}
+	.news-list li {
+		font-size: 1.2em;
+	}
+}

@@ -15,11 +15,9 @@ ul,li { list-style: none; margin: 0; padding: 0; }
 .web-header { width: 90%; background: #c10000; margin: 0 auto; margin-top: 3%; padding: 5%; text-align: center; }
 .kind { color: #FFF; font-size: 3vmin; }
 .article-title { color: #FFF; font-size: 5vmin; }
-/*
-.baseline { width: 80%; border-top: 1px solid #FFF; font-size: 0; margin: 0 auto; }
-*/
-.link { font: 1.5vmin 'Comfortaa', cursive; letter-spacing: 0.2em; margin: 2% 0 0 0; }
-.link a { color: #DDD; }
+
+.link { font: 1.5vmin 'Comfortaa', cursive; letter-spacing: 0.2em; padding: 1.5em 0 0 0; }
+.link a { color: #DDD; display: inline-block; }
 
 .JPG-block { width: 100%; margin: 0 auto; padding: 3% 0; text-align: center; }
 .JPG-block img { width: 90%; max-width: 1200px; }
