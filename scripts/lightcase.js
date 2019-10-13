@@ -58,7 +58,7 @@
 				forceWidth: false,
 				forceHeight: false,
 				liveResize: true,
-				fullScreenModeForMobile: true,
+				fullScreenModeForMobile: false,
 				mobileMatchExpression: /(iphone|ipod|ipad|android|blackberry|symbian)/,
 				disableShrink: false,
 				shrinkFactor: .75,
