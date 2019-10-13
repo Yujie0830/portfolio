@@ -102,15 +102,6 @@ li {
     text-align: center;
 }
 
-
-/*
-.btn-web-top,
-.btn-web-goBACK {
-    margin-bottom: 3%;
-    text-align: center; 
-}
-*/
-
 .btn-web-top a,
 .btn-web-goBACK a {
     width: 110px;
@@ -139,9 +130,7 @@ li {
     .link a {
         font-size: 1vmin;
     }
-    .btn-web-top a {
-        width: 80px;
-        font-size: 1em;
-        padding: 0.3em;
+    .web-btn-block {
+        width: 100%;
     }
 }
