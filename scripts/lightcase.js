@@ -53,7 +53,7 @@
 				cssTransitions: true,
 				speedIn: 250,
 				speedOut: 250,
-				maxWidth: 1200,
+				maxWidth: 1920,
 				maxHeight: 1400,
 				forceWidth: false,
 				forceHeight: false,
@@ -62,7 +62,7 @@
 				mobileMatchExpression: /(iphone|ipod|ipad|android|blackberry|symbian)/,
 				disableShrink: false,
 				shrinkFactor: .75,
-				overlayOpacity: .8,
+				overlayOpacity: .9,
 				slideshow: false,
 				timeout: 5000,
 				swipe: true,
@@ -88,17 +88,17 @@
 				},
 				iframe: {
 					width: 1920,
-					height: 1080,
+					height: 1400,
 					frameborder: 0
 				},
 				flash: {
-					width: 1920,
-					height: 1080,
+					width: 400,
+					height: 205,
 					wmode: 'transparent'
 				},
 				video: {
-					width: 1920,
-					height: 1080,
+					width: 400,
+					height: 225,
 					poster: '',
 					preload: 'auto',
 					controls: true,
