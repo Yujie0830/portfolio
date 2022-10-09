@@ -1,0 +1,56 @@
+*
+    box-sizing: border-box
+    line-height: 1.5
+    scroll-behavior: smooth
+    &::selection
+        background: map-get( $color, secondary )
+        color: white
+
+html, body
+    background: map-get( $color, background )
+    color: map-get( $color, text )
+    cursor: none !important
+    font:
+        family: 'Noto Sans TC', sans-serif
+        size: 16px
+        weight: 400
+    letter-spacing: 2px
+
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+img
+    width: 100%
+    height: auto
+
+figure
+    line-height: 0
+    figcaption
+        line-height: 1.2
+
+a
+    color: inherit
+    cursor: none
+    display: block
+    text-decoration: none
+    transition: .3s
+    &:hover
+        color: map-get( $color, secondary )
+
+.color
+    &__gray
+        color: map-get( $color, primary-tint )
+
+.font
+    &__en
+        font:
+            family: $font-family-en
+            size: inherit
+
+.wrapper
+    width: 100%
+    max-width: 1860px
+    margin: 0 auto
+    padding: 0 map-get( $size, xxl )

@@ -1,0 +1,20 @@
+footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: $font-family-en
+    letter-spacing: 2px
+    margin: map-get( $size, xxl ) 0
+    .contact
+        display: flex
+        &__item
+            &:not(:first-child)
+                &::before
+                    content: '|'
+                    display: inline-block
+                    margin: 0 map-get( $size, xs )
+            a
+                display: inline-flex
+    p
+        color: map-get( $color, primary-tint )
+        margin: map-get( $size, xxs ) 0 0

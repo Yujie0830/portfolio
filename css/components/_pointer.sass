@@ -1,0 +1,43 @@
+.Pointer
+    opacity: 0
+    pointer-events: none
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    +screen-size(lg)
+        display: none
+    &.fadein
+        opacity: 1
+        transition: opacity .4s
+    &__back
+        &::before
+            content: ''
+            width: 50px
+            height: 50px
+            background-color: map-get( $color, primary )
+            border-radius: 50px
+            display: block
+            margin: -25px 0 0 -25px
+            opacity: .1
+        &.hover
+            &::before
+                transform: scale(1.8)
+                transition: transform 0.3s cubic-bezier(.19,1,.22,1)
+        &.fadein
+            transition: transform .8s cubic-bezier(.19,1,.22,1)
+    &__front
+        &::before
+            content: ''
+            width: 14px
+            height: 14px
+            background-color: map-get( $color, primary )
+            border-radius: 10px
+            display: block
+            margin: -7px 0 0 -7px
+        &.hover
+            &::before
+                transform: scale(0)
+                transition: transform 0.3s cubic-bezier(.19,1,.22,1)
+        &.fadein
+            transition: transform .3s cubic-bezier(.19,1,.22,1)

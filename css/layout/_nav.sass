@@ -1,0 +1,16 @@
+nav
+    display: flex
+    justify-content: space-between
+    padding: 20px 0
+    .font__en
+        font:
+            size: map-get( $size, lg )
+            weight: 700
+
+.navbar
+    display: flex
+    li
+        &:not(:last-child)
+            margin: 0 2rem 0 0
+            +screen-size(sm)
+                margin: 0 1rem 0 0

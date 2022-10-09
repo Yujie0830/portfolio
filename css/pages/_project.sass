@@ -1,0 +1,22 @@
+.project
+    &__title
+        display: flex
+        align-items: center
+    &__link
+        width: 3%
+        max-width: 30px
+        margin: 0 0 0 map-get( $size, xs )
+        opacity: .3
+        transition: .3s
+        &:hover
+            opacity: .9
+            svg
+                fill: map-get( $color, secondary )
+    &__content
+        margin: 0 0 100px
+    &__subTitle
+        font:
+            size: map-get( $size, lg )
+            weight: 700
+        margin: 0 0 map-get( $size, xs )
+
